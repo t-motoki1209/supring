@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>こんにちわ</h1>
+		<p th:text="${memo}">bbb</p>	
+		<a href="http://localhost:8080"></a>
+		
+		<form action="/hello" method="get" >
+			<p>名前</p>
+			<input type="text" name="msg" >
+			<p>年齢</p>
+			<input type="text" name="ooo" >
+			<p>趣味</p>
+			<input type="textbox" name="aaa" >
+			<br>
+			<button>送信</button>
+			</form>
+
+</body>
+</html>

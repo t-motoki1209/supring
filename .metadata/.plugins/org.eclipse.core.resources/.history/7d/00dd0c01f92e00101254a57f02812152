@@ -1,0 +1,13 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class HelloController {
+
+	@GetMapping("/hello") //かならず/helloまで作ったら実行できるか確認
+	public String hello() {
+
+		return "input";
+	}
+
+}

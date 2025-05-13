@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+       function callJavaMethod() {
+           fetch('/sayHello')
+               .then(response => response.text())
+               .then(data => {
+                   document.getElementById('response').innerText = data;
+               })
+               .catch(error => console.error('Error:', error));
+       }
+   </script>
+<body>
+	<h1>Press the button to call Java method</h1>
+	    <button onclick="callJavaMethod()">Call Java Method</button>
+	    <p id="response"></p>
+
+
+
+
+</body>
+</html>

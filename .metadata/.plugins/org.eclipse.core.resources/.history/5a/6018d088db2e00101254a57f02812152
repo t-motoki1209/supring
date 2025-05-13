@@ -1,0 +1,22 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller//アノテーション
+public class Hellocontroller {
+	
+	//@return thymeleafテンプレート名
+	
+	
+	@GetMapping("/")//getメソッドでurl/で呼び出されたときに呼び出される
+	
+	public String index() {
+		
+		return "hello";
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>hh</h1>
+<form action="/omikuji" method="get" >
+	<button>おみくじ</button>
+</form>
+
+
+<script>
+	
+	
+	
+	let clickResultDom = document.querySelector("#click_result");
+			clickKickDom.addEventListener("click", function() {
+				clickResultDom.innerHTML = "クリックされました";
+			});
+	</script>
+</body>
+</html>

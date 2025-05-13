@@ -1,0 +1,21 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class HelloController {
+
+	@GetMapping("/hello") //か
+	public String input() { 
+		
+
+		return "input";
+	}
+
+	@GetMapping("/") 
+
+	public String index() {
+
+		return "index";
+
+	}
+}

@@ -1,0 +1,26 @@
+package com.example.demo.controller;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+public class HelloController {
+
+	@GetMapping("/hello") //かならず/helloまで作ったら実行できるか確認
+	public String hello(@RequestParam("msg") String message, //リクエストを受け取る仮引数
+			//遷移先画面にデータを引き継ぐための変数
+			Model model) {
+
+		model.addAttribute("memo", message);
+
+		return "hello";
+	}
+
+	@GetMapping({ "/", "/test" }) //getメソッドでurl/で呼び出されたときに呼び出される
+
+	public String index() {
+
+		return "hello";
+
+	}
+}

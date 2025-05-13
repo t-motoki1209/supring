@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>商品登録</title>
+</head>
+<body>
+	<h1>商品登録</h1>
+	<form action="/item" method="post">
+		<table border="1"> 
+			<tr><th>名前</th><td><th th:text="${name}"></th></td></tr>
+			<tr><th>年齢</th><td><th th:text="${age}"></th></td></tr>
+			<tr><th>memo</th><td><th th:text="${memo}"></th></td></tr>
+			<tr><th>趣味</th><td><th th:text="${hobby}"></th></td></tr>
+			</table>
+		<button>送信</button>
+	</form>
+</body>
+</html>

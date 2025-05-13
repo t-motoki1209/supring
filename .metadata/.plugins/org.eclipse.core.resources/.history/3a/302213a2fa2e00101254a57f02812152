@@ -1,0 +1,21 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class HelloController {
+
+	@GetMapping("/hello") //かならず/helloまで作ったら実行できるか確認
+	public String input() { //リクエストを受け取る仮引数
+		//遷移先画面にデータを引き継ぐための変数
+
+		return "input";
+	}
+
+	@GetMapping("/") //getメソッドでurl/で呼び出されたときに呼び出される
+
+	public String index() {
+
+		return "index";
+
+	}
+}

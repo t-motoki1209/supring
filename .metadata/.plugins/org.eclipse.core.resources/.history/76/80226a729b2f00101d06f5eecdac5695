@@ -1,0 +1,22 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class ItemController {
+
+	@GetMapping("/") //か
+	public String index() {
+
+		return "itemForm";
+	}
+
+	/*@PostMapping("/item")
+	public String confirm(
+			@RequestParam(name ="name", defaultValue = "未設定")String name,
+			@RequestParam(name ="name", defaultValue = "未設定")String name,
+			
+			)*/
+
+}

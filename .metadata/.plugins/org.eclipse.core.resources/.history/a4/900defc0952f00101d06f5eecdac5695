@@ -1,0 +1,40 @@
+package com.example.demo.controller;
+
+import java.util.Random;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class OmikujiController {
+
+	@GetMapping("/omikuji") //か
+	public String omikuji(Model model) {
+		Random rand = new Random();
+		int num = rand.nextInt(6) + 1;
+		switch (num) {
+		case 1:
+			model.addAttribute("memo", "大吉");
+			break;
+		case 2:
+			model.addAttribute("memo", "小吉");
+			break;
+		case 3:
+			model.addAttribute("memo", "吉");
+			break;
+		case 4:
+			model.addAttribute("memo", "吉");
+			break;
+		case 5:
+			model.addAttribute("memo", "吉");
+			break;
+		case 6:
+			model.addAttribute("memo", "凶");
+			break;
+		}
+
+		return "omikuji";
+	}
+
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>こんにちわ</h1>
+	
+	<a href="http://localhost:8080"></a>
+	<p>名前</p>
+	<form action="/hello" method="get" >
+		<input type="text" name="msg" >
+		<button>送信</button>
+		</form>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller //アノテーション
+public class Hellocontroller {
+
+	@PostMapping("/hello")
+	public String helloByPost(@RequestParam("msg") String message, Model model) {
+
+		model.addAttribute("memo", model);
+
+		return "hello";
+	}
+
+	@GetMapping("/hello") //かならず/helloまで作ったら実行できるか確認
+	public String hello(@RequestParam("msg") String message, //リクエストを受け取る仮引数
+			//遷移先画面にデータを引き継ぐための変数
+			Model model) {
+
+		model.addAttribute("memo", message);
+
+		return "hello";
+	}
+
+	//@return thymeleafテンプレート名
+
+	@GetMapping({ "/", "/test" }) //getメソッドでurl/で呼び出されたときに呼び出される
+
+	public String index() {
+
+		return "hello";
+
+	}
+
+}

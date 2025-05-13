@@ -1,0 +1,57 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class ContactController {
+
+	@GetMapping("/contact")
+	public String contact() {
+
+		return "contactForm";
+	}
+
+	@GetMapping("/contact/result")
+	public String contactre() {
+
+		return "contactResult";
+	}
+
+	@PostMapping("/contact")
+	public String confirm(
+			@RequestParam(name = "name", defaultValue = "") String name,
+			@RequestParam(name = "mele", defaultValue = "未設定") String mele,
+			@RequestParam(name = "memo") String[] memoList,
+			Model model
+
+	) {
+
+		int a = 0;
+
+		if (name.equals("")) {
+			model.addAttribute("memoList", "名前は必須です");
+			a = 1;
+		}
+		if (mele.equals("未設定")) {
+			model.addAttribute("memoList", "メアドは必須です");
+			a = 1;
+		}
+		if (mele.length() < 20) {
+			model.addAttribute("memoList", "名前は20文字以内です");
+			a = 1;
+		}
+		if (a == 1) {
+			return "contactForm";
+		} else {
+
+			model.addAttribute("name", name);
+			model.addAttribute("mele", mele);
+			return "contactResult";
+
+		}
+	}
+}

@@ -1,0 +1,36 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class ContactController {
+
+	@GetMapping("/contact")
+	public String contact() {
+
+		return "contactForm";
+	}
+
+	@GetMapping("/contact/result")
+	public String contactre() {
+
+		return "contactFormResult";
+	}
+
+	@PostMapping("/contact")
+	public String confirm(
+			@RequestParam(name = "name", defaultValue = "未設定") String name,
+			@RequestParam(name = "mele", defaultValue = "未設定") String mele,
+			Model model
+
+	) {
+		model.addAttribute("name", name);
+		model.addAttribute("mele", mele);
+
+		return "contactResult";
+	}
+}

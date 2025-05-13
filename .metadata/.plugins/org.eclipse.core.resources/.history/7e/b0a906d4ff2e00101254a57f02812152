@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>kekka</title>
+</head>
+<body>
+	<p th:text="${memo}">bbb</p>
+	<tr><th>名前</th><td></td><p th:text="${name}">bbb</p></tr>
+
+</body>
+</html>
