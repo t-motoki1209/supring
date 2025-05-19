@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title re</title>
+</head>
+<body>
+	<ul th:if="${memoList}"
+				><li th:each="memoList:${memoList}"th:text="${memoList}"></li>
+				</ul>
+	<h1>お問い合わせありがとう</h1>
+	
+	<form action="/account" method="post">
+	<table border="1"> 
+	<tr><th>名前</th><th><input type="text" name="name" th:value="${account.name}"></th></tr>
+	<tr><th>メールアドレス</th><th><input type="text" name="mail"th:value="${account.mail}"></th></th></tr>
+	<tr><th>パスワード</th><th><input type="text" name="pass"th:value="${account.pass}"></th></th></tr>
+	</table>
+	<button>確認</button>
+	</form>								
+
+</body>
+</html>

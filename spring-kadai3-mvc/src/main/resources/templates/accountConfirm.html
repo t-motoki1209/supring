@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title re</title>
+</head>
+<body>
+	
+	<h1>登録確認</h1>
+	<form>
+	<table border="1"> 
+		<tr><th>名前</th><th th:text="${account.name}"></th></tr>
+		<tr><th>メールアドレス</th><th th:text="${account.mail}"></th></th></th></tr>
+		<tr><th>パスワード</th><th th:text="${account.pass}"></th></th></tr>
+		</table>
+		<button>決定</button>
+		</form>
+		
+</body>
+</html>
