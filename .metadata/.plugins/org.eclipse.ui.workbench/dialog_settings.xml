@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="374"/>
+		<item key="DIALOG_X_ORIGIN" value="145"/>
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
 		<item key="DIALOG_WIDTH" value="724"/>
 		<item key="DIALOG_HEIGHT" value="557"/>
@@ -21,17 +21,29 @@
 		</section>
 	</section>
 	<section name="ImportExportAction">
-		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.buildship.ui.wizards.project.import"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.buildship.ui.importwizards"/>
 		</list>
 		<section name="ImportExportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="429"/>
+			<item key="DIALOG_Y_ORIGIN" value="31"/>
+			<item key="DIALOG_WIDTH" value="525"/>
+			<item key="DIALOG_HEIGHT" value="550"/>
+			<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Yu Gothic UI"/>
 		</section>
 	</section>
 	<section name="FileSystemImportWizard">
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\student\Desktop\授業用ソースコード\Java\Springフレームワーク_ソースコード\spring-chap7-jpa-crud\src\main\resources\templates"/>
+			<item value="C:\Users\student\Desktop\授業用ソースコード\Java\Springフレームワーク_ソースコード\spring-chap7-jpa-crud\src\main\resources"/>
+			<item value="C:\training\supring-workspace\spring-chap7-jpa\src\main\java\com\example\demo\repository"/>
+			<item value="C:\training\supring-workspace\spring-chap7-jpa\src\main\java\com\example\demo\entity"/>
+			<item value="C:\training\supring-workspace\spring-chap7-jpa\src\main\resources\templates\templates"/>
+			<item value="C:\training\supring-workspace\spring-chap7-jpa\src\main\java\com\example\demo\controller"/>
 			<item value="C:\Users\student\Desktop\授業用ソースコード\Java\Springフレームワーク_ソースコード\spring-chap5-session\src\main\resources\templates"/>
 			<item value="C:\Users\student\Desktop\授業用ソースコード\Java\Springフレームワーク_ソースコード\spring-chap4-mvc\src\main\resources\templates"/>
 			<item value="C:\Users\student\Desktop\授業用ソースコード\Java\Springフレームワーク_ソースコード\spring-chap3-parameter\src\main\resources\templates"/>

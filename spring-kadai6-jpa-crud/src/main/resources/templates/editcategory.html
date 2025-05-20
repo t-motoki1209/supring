@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form th:action="@{/categories/{categoryId}/edit(category=${category.id})}" method="post">
+	<form th:action="@{/categories/{categoryId}/edit(categoryId=${category.id})}" method="post">
 			<table border="1">
 				<tr>
 					<th>商品ID</th>
